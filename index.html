@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>World of WarCraft Alfa</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image:url(bg1.png); background-size: cover">
+	<div class="main">
+		<div class="sword">
+			<img src="sword.png">
+		</div>
+		<div class="nojni">
+			<img src="nojni.png">
+		</div>
+		<div class="shield">
+			<img src="shield.png">
+		</div>
+		
+		<div class="school">
+			<img src="school.png" alt="">
+		</div>
+		<div  class="mastery"> 
+			<img src="masterskaya.png" alt="">
+		</div>
+		<div  class="arena"> 
+			<img src="arena.png" alt="">
+		</div>
+		<img src="player.png" alt="" class="main_player">
+		<div style="height: 130px; width: 130px; background: orange; position: absolute;"></div>
+		<div class="audio" style="height: 130px; width: 130px; background-image: url('no audio.png'); position: absolute; background-size: 100% 100%;"></div>
+
+		<div class="perchi1" style="height: 130px; width: 130px; background: orange; position: absolute; top: 83%; left: 91%; display: none;"></div>
+		<div class="perchi2" style="height: 130px; width: 130px; background-image: url('перчи.jpg'); position: absolute; background-size: 100% 100%; top: 83%; left: 91%; display: none;"></div>
+		<div class="mech1" style="height: 130px; width: 130px; background: orange; position: absolute; top: 83%; left: 91%; display: none;"></div>
+		<div class="mech2" style="height: 130px; width: 130px; background-image: url('меч.jpg'); position: absolute; background-size: 100% 100%; top: 83%; left: 91%; display: none;"></div>
+		<div class="tapor1" style="height: 130px; width: 130px; background: orange; position: absolute; top: 83%; left: 91%; display: none;"></div>
+		<div class="tapor2" style="height: 130px; width: 130px; background-image: url('тапор.jpg'); position: absolute; background-size: 100% 100%; top: 83%; left: 91%; display: none;"></div>
+		
+
+		<audio class="main_audio" loop="loop" autoplay>
+        	<source src="clash.mp3">
+		</audio>
+	</div>
+	
+	<!--2 локация-->
+	<div class="location2" style="display:none;">
+		<audio class="school_audio" loop="loop" autoplay>
+        	<source src="Doki.mp3">
+		</audio>
+		<!--задание на доске-->
+		<div class="mx-auto col-3 ">
+			<h4 class="p-2 pl-4 text-white" style="position: absolute; width: 300px; top: 320px; height: 50px;">Что нужно чтобы выковать меч?</h4>
+		</div>
+
+		<!--варианты ответов-->
+		<div class="loc2_variants_block">
+			 <div class="loc2_variants">Вариант 1: Мясо</div>
+			 <div class="loc2_variants" style="margin-left: 150px;">Вариант 2: Серебро</div>
+			 <div class="loc2_variants" style="margin-left: 300px; ">Вариант 3: Алмаз</div>
+			 <div class="loc2_variants" style="margin-left: 450px; ">Вариант 4: Золото</div>
+			 <div class="loc2_variants" style="margin-left: 600px;">Вариант 5: Олово</div>
+			 <div class="loc2_pravilno" style="margin-left: 750px;">Вариант 6: Железная руда</div>
+		</div>
+	</div>
+	
+	<!--3 локация-->
+	<div class="location3" style="display:none;">
+		<audio class="mastery_audio" loop="loop" autoplay>
+        	<source src="Light.mp3">
+		</audio>
+		<div class="loc3_doors">
+			<div class="loc3_door1" style="background-image: url('дверь.png'); height: 500px; width: 300px; position: absolute; left: 300px; top: 100px; background-size: 100% 100%;"></div>
+			<div class="loc3_door2" style="background-image: url('дверь.png'); height: 500px; width: 300px; position: absolute; left: 900px; top: 100px; background-size: 100% 100%;"></div>
+
+			<div class="loc3_variants_block1" style="height: 700px; width: 400px; display: none; margin-left: 35%;">
+				<div class="loc3_pravilno" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>Выбери чем ты будешь держать смоё оружие</h3>
+				</div>
+				<div class="loc3_pravilno1" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>Руками</h3>
+				</div>
+			 	<div class="loc3_pravilno1" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+			 		<h3>средней палкой повышенной прочности</h3>
+			 	</div>
+				<div class="loc3_pravilno1" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>рукоятью меча</h3>
+				</div>
+			</div>
+			<div class="loc3_variants_block2" style="height: 700px; width: 400px; display: none; margin-left: 35%;">
+				<div class="loc3_pravilno" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>Выбери чем будешь атаковать</h3>
+				</div>
+				<div class="loc3_pravilno2" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>Кастетом</h3>
+				</div>
+			 	<div class="loc3_pravilno2" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+			 		<h3>железным коротким камнем с остриями, напоминающий рыбу</h3>
+			 	</div>
+				<div class="loc3_pravilno2" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>железной прочной длинной пластиной</h3>
+				</div>
+			</div>
+			<div class="loc3_variants_block3" style="height: 700px; width: 400px; display: none; margin-left: 35%;">
+				<div class="loc3_pravilno" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h5>Выбери чем укрепишь оружение, чтобы не разволилось оно пока ты сражаешься</h5>
+				</div>
+				<div class="loc3_pravilno3_hand" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>перчатками</h3>
+				</div>
+			 	<div class="loc3_pravilno3_axe" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+			 		<h3>скотчем</h3>
+			 	</div>
+				<div class="loc3_pravilno3_sword" style="height: 100px; width: 400px; background: orange; margin-top: 50px;">
+					<h3>всё уже было всплавлено</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--4 локация-->
+	<div class="location4" style="display: none;">
+		<audio class="arena_audio" loop="loop" autoplay>
+        	<source src="WoT.mp3">
+		</audio>
+
+		<div class="enemy">
+		<h1 class="enemy_name"></h1>
+
+		<div class="enemy_img">
+			<h2 class="enemy_hp player_property" style="left: 10%;">0</h2>
+			<h2 class="enemy_damage player_property" style="left: 82%;">0</h2>
+		</div>	
+		<button class="btn" style="position: absolute;">сражение</button>
+		<a class="end" style="color: black; text-decoration: none; position: absolute; display: none; margin-left: 30%;" href="https://artemsold.github.io/WoW-end/">Выход к финальному боссу</a>
+		
+	</div>
+
+	<div class="player">
+		<h1 class="player_name"></h1>
+		
+		<div class="player_img">
+			<h2 class="player_hp player_property" style="left: 10%;">0</h2>
+			<h2 class="player_damage player_property" style="left: 82%;">0</h2>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+	
+</body>
+</html>
